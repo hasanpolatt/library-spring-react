@@ -21,8 +21,8 @@ public class Initializer implements CommandLineRunner {
 
     @Override
     public void run(String... strings) {
-        Stream.of("İthaki", "Timaş", "Kronik", "Metis").forEach(name ->
-                repository.save(new Library(name))
+        Stream.of("İthaki", "Timaş", "Kronik", "Metis").forEach(publisher ->
+                repository.save(new Library(publisher))
         );
 
         Library publishers = repository.findByName("İthaki");
