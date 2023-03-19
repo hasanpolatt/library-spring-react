@@ -38,20 +38,20 @@ public class LibraryController {
     }
 
     @PostMapping("/book")
-    ResponseEntity<Library> createdLibrary(@Valid @RequestBody Library library) throws URISyntaxException {
+    ResponseEntity<Library> createLibrary(@Valid @RequestBody Library library) throws URISyntaxException {
         log.info("for create library: {}", library);
         Library result = libraryRepository.save(library);
-        return ResponseEntity.created(new URI("/api/library" + result.getId())).body(result);
+        return ResponseEntity.created(new URI("/api/books" + result.getId())).body(result);
     }
 
-    @PutMapping("/library/{id}")
+    @PutMapping("/book/{id}")
     ResponseEntity<Library> updateLibrary(@Valid @RequestBody Library library) {
         log.info("for update library", library);
         Library result = libraryRepository.save(library);
         return ResponseEntity.ok().body(result);
     }
 
-    @DeleteMapping("/library/{id}")
+    @DeleteMapping("/book/{id}")
     public ResponseEntity<?> deleteLibrary(@PathVariable Long id) {
         log.info("for delete library", id);
         libraryRepository.deleteById(id);
