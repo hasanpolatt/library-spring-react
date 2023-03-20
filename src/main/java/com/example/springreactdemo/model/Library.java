@@ -23,6 +23,8 @@ public class Library {
     private String name;
 
     private String publisher;
+    private String author;
+    private String translator;
 
     @ManyToOne(cascade=CascadeType.PERSIST)
     private Book book;
