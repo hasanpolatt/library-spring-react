@@ -12,10 +12,10 @@ const ClientNavbar = () => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="justify-content-end" style={{width: "100%"}} navbar>
                     <NavItem>
-                        <NavLink href="https://twitter.com/immortalasgod">@twitter</NavLink>
+                        <NavLink href="https://twitter.com/immortalasgod">Twitter</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="https://github.com/hasanpolatt">Github</NavLink>
+                        <NavLink href="https://github.com/hasanpolatt">GitHub</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>

@@ -65,12 +65,12 @@ const LibraryList = () => {
                     <Button color="success" tag={Link} to="/books/new">Add Library</Button>
                 </div>
                 <h3>Libraries</h3>
-                <Table className="mt-4">
+                    <Table className="mt-4">
                     <thead>
                     <tr>
                         <th width="20%">Publisher</th>
                         <th width="20%">Author</th>
-                        <th>Events</th>
+                        <th width="20%">Book Name</th>
                         <th width="10%">Actions</th>
                     </tr>
                     </thead>

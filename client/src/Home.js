@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <ClientNavbar />
             <Container fluid>
-                <Button color="link"><Link to="/books">My Library</Link></Button>
+                <Button color="primary"><Link className="hoverbold" to="/books">My Library</Link></Button>
             </Container>
         </div>
     );
